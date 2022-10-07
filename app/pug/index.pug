@@ -1,0 +1,18 @@
+extends _template.pug
+
+block title
+	title Oil painting
+
+block content
+	include include/_header.pug
+		block menu
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link" href="index.html">Масло/акрил<span class="sr-only">(current)</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="pencil.html">Карандаш</a></li>
+				<li class="nav-item"><a class="nav-link" href="sketch.html">Маркеры</a></li> 
+				<li class="nav-item"><a class="nav-link" href="digital.html">Цифровой рисунок</a></li> 
+				<li class="nav-item"><a class="nav-link" href="paintings.html">Картины по номерам</a></li>
+			</ul>
+	include include/_oil.pug
+	include include/_footer.pug
+	

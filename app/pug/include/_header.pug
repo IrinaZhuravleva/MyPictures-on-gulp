@@ -1,0 +1,18 @@
+header
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light.menu
+    .container
+      a.navbar-brand(href="index.html")
+        img(src="img/photo/avatar.jpg" height="120" width="120" alt="Portrait")
+      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      .blockmenu
+        .blockmenu-close
+        ul.menu-hidden
+          <li><a class="nav-link" href="index.html">Картины по номерам</a></li>
+          <li><a class="nav-link" href="pencil.html">Карандаш</a></li>
+          <li><a class="nav-link" href="sketch.html">Маркеры</a></li>
+          <li><a class="nav-link" href="oil.html">Масло/акрил</a></li>
+          <li><a class="nav-link" href="digital.html">Цифровой рисунок</a></li>
+
+      .collapse.navbar-collapse(id="navbarSupportedContent")
+        block menu

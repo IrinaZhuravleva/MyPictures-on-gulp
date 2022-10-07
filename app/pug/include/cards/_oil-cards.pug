@@ -1,0 +1,25 @@
+- 
+    var slides = [
+        {'name': "Натюрморт",'text': "Холст, 30Х20, масло", 'src': "holland-2.jpg"},
+        {'name': "Натюрморт",'text': "Холст, 20Х20, масло", 'src': "holland-3.jpg"},
+        {'name': "Роза",'text': "Холст, 35Х25, масло", 'src': "holland-4.jpg"},
+        {'name': "Копия",'text': "Холст, 40Х30, масло", 'src': "holland-5.jpg"},
+        {'name': "Пейзаж",'text': "Холст, 30Х40, акрил", 'src': "landscape.jpg"},
+        {'name': "Лодка",'text': "Холст, 30Х40, акрил", 'src': "boat.jpg"},
+        {'name': "Девушка",'text': "Холст, 30Х40, масло", 'src': "girl.jpg"},
+        {'name': "Портрет",'text': "Холст, 20Х15, масло", 'src': "portrait.jpg"},
+        {'name': "Лавандовое поле",'text': "Холст, 20Х15, масло", 'src': "field.jpg"},
+        {'name': "Модерн",'text': "Холст, 15Х20, масло", 'src': "23.jpg"},
+        {'name': "Натюрморт",'text': "Холст, 20Х15, масло", 'src': "bottles.jpg"},
+        {'name': "Абстракция",'text': "Холст, 60Х50, акрил", 'src': "acryl-big.jpg"},
+        {'name': "Натюрморт",'text': "Холст, 30Х25, масло", 'src': "oil-bowl.jpg"}
+        ];
+
+.row
+    each slide, index in slides
+        .col-md-3.col-sm-6
+            .card
+                h4= slide.name
+                p= slide.text
+                a(data-fancybox="gallery" href=`img/photo/${slide.src}`)
+                    img(src=`img/photo/${slide.src}` height="173" width="218")

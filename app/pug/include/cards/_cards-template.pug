@@ -1,0 +1,19 @@
+- 
+    var slides = [
+        {'name': "Натюрморт",'text': "Холст, 30Х20, масло", 'src': "holland-2.jpg"},
+        {'name': "Натюрморт",'text': "Холст, 30Х20, масло", 'src': "holland-2.jpg"},
+        {'name': "Натюрморт",'text': "Холст, 30Х20, масло", 'src': "holland-2.jpg"}
+        ];
+
+.row
+    each slide, index in slides
+        .col-md-3.col-sm-6
+            .card
+                h4= slide.name
+                p= slide.text
+                a(data-fancybox="gallery" href=`img/photo/${slide.src}`)
+                    img(src=`img/photo/${slide.src}` height="173" width="218")
+
+        //- {'name': "",'text': "Холст, , масло", 'src': ".jpg"},
+        //- {'name': "",'text': "Холст, , масло", 'src': ".jpg"},
+        //- {'name': "",'text': "Холст, , масло", 'src': ".jpg"},

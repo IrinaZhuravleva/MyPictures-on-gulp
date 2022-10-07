@@ -1,0 +1,18 @@
+extends _template.pug
+
+block title
+	title Paintings by numbers
+
+block content
+	include include/_header.pug
+		block menu
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"><a class="nav-link" href="index.html">Масло/акрил</a></li>
+				<li class="nav-item"><a class="nav-link" href="pencil.html">Карандаш</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="sketch.html">Маркеры</a></li> 
+				<li class="nav-item"><a class="nav-link" href="digital.html">Цифровой рисунок</a></li> 
+				<li class="nav-item active"><a class="nav-link" href="paintings.html">Картины по номерам<span class="sr-only">(current)</a></li>
+			</ul>
+	include include/_paintings.pug
+	include include/_footer.pug
+	
